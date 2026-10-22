@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="專為東大圖書公司高一國文（108課綱第一冊）打造的段考逆襲學習網站。第一次段考不及格別擔心，提供課文精讀白話翻譯、世說新語成語抽認卡、高頻字音字形、全真段考模擬測驗與提分讀書計畫。">
+  <meta name="keywords" content="高一國文, 東大國文第一冊, 第一次段考, 世說新語, 冀劍制, 師說, 段考不及格, 國文複習, 108課綱">
+  <title>東大高一國文·段考逆襲閣 | 第一次段考翻盤救星</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 頂部導航列 -->
+  <header class="navbar">
+    <a href="#" class="nav-brand">
+      <div class="brand-icon">文</div>
+      <div class="brand-text">
+        <h1>東大國文·逆襲閣</h1>
+      </div>
+      <span class="brand-badge">東大版高一上專用</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#diagnostic" class="nav-link">🩺 失分診斷</a></li>
+        <li><a href="#lessons" class="nav-link">📖 課文精讀庫</a></li>
+        <li><a href="#pitfalls" class="nav-link">⚡ 段考盲區</a></li>
+        <li><a href="#quiz" class="nav-link">🎯 真題模考</a></li>
+        <li><a href="#notebook" class="nav-link">📝 錯題本</a></li>
+        <li><a href="#studyplan" class="nav-link">📅 4週逆襲</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggleBtn" class="theme-toggle-btn" title="切換深色/淺色模式" aria-label="切換深色/淺色模式">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- 英雄橫幅區塊 -->
+  <section class="hero-section">
+    <div class="hero-tag">
+      <span>✨ 108 課綱 · 東大版第一次段考專屬（第 1 課《世說新語》選 + 第 2 課 冀劍制）</span>
+    </div>
+    <h2 class="hero-title">
+      第一次段考<span class="highlight">不及格別灰心</span>！<br>
+      高中國文從這裡<span class="highlight-jade">漂亮逆襲</span>
+    </h2>
+    <p class="hero-desc">
+      國中到高中國文難度三級跳，第一次段考只考<strong>第 1 課《世說新語》選</strong>與<strong>第 2 課冀劍制〈從「感覺」到「事實」的差距〉</strong>，文言難字與長文思辨讓很多高一生大意失分！<br>
+      本站專門針對這兩大核心課文打造：逐句文白翻譯、世說成語抽認卡、易錯形音義與全真題庫，帶你徹底排查盲點，第二次段考重回高分梯隊！
+    </p>
+
+    <div class="hero-cta-group">
+      <a href="#diagnostic" class="btn btn-primary">
+        <span>🩺 立即診斷失分原因</span>
+      </a>
+      <a href="#lessons" class="btn btn-secondary">
+        <span>📖 複習第1~2課段考核心</span>
+      </a>
+      <a href="#quiz" class="btn btn-secondary">
+        <span>🎯 進入段考模擬測驗</span>
+      </a>
+    </div>
+
+    <!-- 關鍵指標卡片 -->
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-number">10 篇</div>
+        <div class="stat-label">東大第一冊課文完整精解</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">文白對照與字詞逐句破譯</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">15 道</div>
+        <div class="stat-label">段考全真題庫與精闢解析</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4 週</div>
+        <div class="stat-label">第二次段考提分讀書計畫</div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- ==========================================================================
+         特別企劃：第一次段考四大題型剖析 (翻譯全對，選擇錯9題逆襲戰術)
+         ========================================================================== -->
+    <section id="examBreakdown" class="section" style="padding-top: 1rem;">
+      <div class="exam-breakdown-section">
+        <div class="feat-banner">
+          <div class="feat-banner-icon">🏆</div>
+          <div class="feat-banner-text">
+            <h4>太棒了！第三大題「翻譯」完全沒錯！你的文言文基本功底子非常扎實！</h4>
+            <p>
+              能把《世說新語》的文言句子一字不漏翻譯正確，證明你課前課後有認真讀書背注釋。
+              <strong>高中國文及格的關鍵在於第四大題「選擇題」！</strong>
+              高中的選擇題考的不是字面意思，而是「深層思維推論、虛詞比較與素養情境遷移」。以下為你全面拆解考卷四大題型與選擇題錯 9 題的核心病因：
+            </p>
+          </div>
+        </div>
+
+        <div class="exam-sections-grid" id="examSectionsGrid">
+          <!-- 由 JS 動態生成四大題型對策卡片 -->
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--accent-gold); margin-bottom: 0.5rem;">
+            🚨 選擇題錯 9 題的「四大隱形誘答地雷」與破題公式
+          </h4>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.2rem;">
+            掌握這 4 大高中命題套路，第二次段考選擇題立刻少錯 7 題以上！
+          </p>
+          <div class="traps-grid" id="trapsGrid">
+            <!-- 由 JS 動態生成 4 大誘答陷阱卡片 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         功能 1：第一次段考失分根源診斷室
+         ========================================================================== -->
+    <section id="diagnostic" class="section">
+      <div class="section-header">
+        <span class="section-tag">Step 1 · 找出病灶</span>
+        <h3 class="section-title">🩺 第一次段考·失分根源診斷室</h3>
+        <p class="section-subtitle">
+          國中會考考「語感」，高中國文考「細緻思辨與精準字詞」。勾選你在這次段考中遇到的狀況，系統將為你精準定位失分原因並開立補強處方！
+        </p>
+      </div>
+
+      <div class="diagnostic-container">
+        <div id="diagnosticGrid" class="diagnostic-grid">
+          <!-- 由 JS 動態渲染診斷題目卡片 -->
+        </div>
+
+        <div class="diagnostic-actions">
+          <span style="font-size: 0.9rem; color: var(--text-secondary);">
+            請勾選 1~3 項最符合你段考狀況的項目
+          </span>
+          <button id="generateDiagnosticBtn" class="btn btn-primary">
+            產生專屬提分處方籤 ➔
+          </button>
+        </div>
+
+        <!-- 診斷結果區塊 -->
+        <div id="diagnosticResult" class="diagnostic-result">
+          <div class="result-header">
+            <h3>📋 你的專屬高一國文急救處方報告</h3>
+            <span class="brand-badge" id="symptomCountBadge">已勾選 0 項</span>
+          </div>
+          <p id="generalAdviceText" style="color: var(--text-secondary); margin-bottom: 1.2rem;"></p>
+          <ul id="adviceList" class="advice-list">
+            <!-- 由 JS 動態注入具體補強建議 -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         功能 2：東大第一冊 課文破譯核心庫
+         ========================================================================== -->
+    <section id="lessons" class="section">
+      <div class="section-header">
+        <span class="section-tag">Step 2 · 課本精讀</span>
+        <h3 class="section-title">📖 東大第一冊 課文核心精讀庫</h3>
+        <p class="section-subtitle">
+          收錄東大版第 1 至第 10 課。上週第一次段考精準鎖定：<strong>第 1 課《世說新語》選</strong>（雪夜訪友、絕妙好辭、詠絮之才）與<strong>第 2 課冀劍制〈從「感覺」到「事實」的差距〉</strong>，文白翻譯、思辨脈絡與段考考點全解析！
+        </p>
+      </div>
+
+      <!-- 篩選標籤 -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">全部課文 (10篇)</button>
+        <button class="filter-btn" data-filter="exam1">第一次段考核心 (僅考第1、2課 ★)</button>
+        <button class="filter-btn" data-filter="classical">文言文篇章</button>
+        <button class="filter-btn" data-filter="modern">現代白話文</button>
+        <button class="filter-btn" data-filter="exam2">第二次段考預習</button>
+      </div>
+
+      <!-- 課文卡片網格 -->
+      <div id="lessonsGrid" class="lessons-grid">
+        <!-- 由 JS 動態渲染課文卡片 -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         功能 3：段考致命盲區·四神兵庫
+         ========================================================================== -->
+    <section id="pitfalls" class="section">
+      <div class="section-header">
+        <span class="section-tag">Step 3 · 攻克盲點</span>
+        <h3 class="section-title">⚡ 段考致命盲區·四神兵庫</h3>
+        <p class="section-subtitle">
+          高一第一次段考最容易扣分的四大模組：成語典故、易錯字音字形、高中文言文八大虛詞、經典修辭。
+        </p>
+      </div>
+
+      <!-- 子分頁按鈕 -->
+      <div class="pitfall-tabs">
+        <button class="pitfall-tab-btn active" data-target="flashcardPanel">
+          🎴 《世說新語》高頻成語抽認卡
+        </button>
+        <button class="pitfall-tab-btn" data-target="matchingPanel">
+          🧩 第二大題：配合題特訓
+        </button>
+        <button class="pitfall-tab-btn" data-target="wordsPanel">
+          🔤 易錯字音字形 & 古今異義
+        </button>
+        <button class="pitfall-tab-btn" data-target="particlesPanel">
+          📜 文言文核心虛詞大通關
+        </button>
+        <button class="pitfall-tab-btn" data-target="rhetoricPanel">
+          🎨 段考高頻修辭技巧
+        </button>
+      </div>
+
+      <!-- 1. 成語抽認卡面板 -->
+      <div id="flashcardPanel" class="pitfall-panel active">
+        <div class="flashcard-wrapper">
+          <div id="flashcardInner" class="flashcard-inner" title="點擊卡片即可翻轉查看背面詳解">
+            <!-- 正面 -->
+            <div class="flashcard-face flashcard-front">
+              <span class="brand-badge" id="cardSourceFront">《世說新語》</span>
+              <h4 class="idiom-title" id="cardTitle">詠絮之才</h4>
+              <p class="idiom-pinyin" id="cardPinyin">ㄩㄥˇ ㄒㄩˋ ㄓ ㄘㄞˊ</p>
+              <div class="flip-hint">
+                <span>🔄 點擊卡片翻面看白話釋義、出處與段考陷阱</span>
+              </div>
+            </div>
+            <!-- 背面 -->
+            <div class="flashcard-face flashcard-back">
+              <div class="card-back-section">
+                <span class="card-back-label">【釋義】</span>
+                <p class="card-back-text" id="cardMeaning"></p>
+              </div>
+              <div class="card-back-section">
+                <span class="card-back-label">【典故故事】</span>
+                <p class="card-back-text" id="cardStory" style="font-size: 0.9rem;"></p>
+              </div>
+              <div class="card-back-section">
+                <span class="card-back-label">【課本例句】</span>
+                <p class="card-back-text" id="cardExample" style="font-size: 0.9rem;"></p>
+              </div>
+              <div class="card-back-pitfall" id="cardPitfall">
+                <!-- 易錯提示 -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 控制器 -->
+          <div class="flashcard-controls">
+            <button id="prevCardBtn" class="btn btn-secondary">◀ 上一張</button>
+            <span id="cardCounter" class="card-counter">1 / 10</span>
+            <button id="nextCardBtn" class="btn btn-primary">下一張 ▶</button>
+            <button id="shuffleCardBtn" class="btn btn-secondary" title="隨機洗牌">🔀 隨機抽考</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. 字音字形面板 -->
+      <div id="wordsPanel" class="pitfall-panel">
+        <div class="words-grid" id="wordsGrid">
+          <!-- JS 動態生成字音字形卡片 -->
+        </div>
+      </div>
+
+      <!-- 3. 文言虛詞面板 -->
+      <div id="particlesPanel" class="pitfall-panel">
+        <div class="particles-table-container">
+          <table class="particles-table">
+            <thead>
+              <tr>
+                <th style="width: 15%;">虛詞</th>
+                <th style="width: 35%;">常見詞性與含義</th>
+                <th style="width: 50%;">東大版課文例句與破譯</th>
+              </tr>
+            </thead>
+            <tbody id="particlesTableBody">
+              <!-- JS 動態生成虛詞整理 -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4. 修辭技巧面板 -->
+      <div id="rhetoricPanel" class="pitfall-panel">
+        <div class="rhetoric-grid" id="rhetoricGrid">
+          <!-- JS 動態生成修辭卡片 -->
+        </div>
+      </div>
+
+      <!-- 5. 配合題互動面板 (第二大題專區) -->
+      <div id="matchingPanel" class="pitfall-panel">
+        <div class="matching-card-wrapper">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; flex-wrap: wrap; gap: 0.8rem;">
+            <div>
+              <span class="brand-badge">第二大題 配合題專區</span>
+              <h4 id="matchingSetTitle" style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--accent-gold); margin-top: 0.3rem;">
+                配合題闖關
+              </h4>
+              <p id="matchingSetInstruction" style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+            </div>
+            <div id="matchingSetSelector" class="matching-set-selector">
+              <!-- JS 動態生成題組按鈕 -->
+            </div>
+          </div>
+
+          <div class="matching-arena">
+            <div class="matching-col">
+              <h5>【左欄項目】</h5>
+              <div id="matchingLeftList" class="matching-items-list"></div>
+            </div>
+            <div class="matching-col">
+              <h5>【右欄對應】</h5>
+              <div id="matchingRightList" class="matching-items-list"></div>
+            </div>
+          </div>
+
+          <div class="matching-controls">
+            <span id="matchingStatusText" style="font-size: 0.95rem; font-weight: 600; color: var(--accent-jade-light);">
+              請先點選左側項目，再點選右側項目進行配對！
+            </span>
+            <button id="resetMatchingBtn" class="btn btn-secondary" style="font-size: 0.88rem; padding: 0.4rem 1rem;">
+              🔄 重設此題組
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         功能 4：段考全真測驗模擬系統 (第四大題：選擇題錯9題逆襲專案)
+         ========================================================================== -->
+    <section id="quiz" class="section">
+      <div class="section-header">
+        <span class="section-tag">Step 4 · 實戰檢驗 (第四大題)</span>
+        <h3 class="section-title">🎯 高一第一次段考·選擇題 20 題逆襲模考</h3>
+        <p class="section-subtitle">
+          100% 聚焦第一次段考範圍（<strong>第 1 課《世說新語》選 + 第 2 課冀劍制</strong>）！針對「選擇錯 9 題」之痛點精選 20 道全真題，含字音字形、深層文意推論、虛詞「之」語法比較、成語古今異義與素養情境遷移。即時評分，每題均附深度解析！
+        </p>
+      </div>
+
+      <div class="quiz-container">
+        <!-- 進行中的測驗介面 -->
+        <div id="quizActiveView">
+          <div class="quiz-header-bar">
+            <span class="quiz-progress-text" id="quizProgressText">第 1 題 / 共 20 題</span>
+            <span class="quiz-tag-pill" id="quizTagPill">字音字形</span>
+          </div>
+
+          <div class="quiz-progress-bar">
+            <div id="quizProgressFill" class="quiz-progress-fill"></div>
+          </div>
+
+          <h4 class="quiz-question-title" id="quizQuestionTitle">題目載入中...</h4>
+
+          <div class="quiz-options-list" id="quizOptionsList">
+            <!-- JS 動態生成選項按鈕 -->
+          </div>
+
+          <!-- 解析回饋方塊 -->
+          <div id="quizFeedbackBox" class="quiz-feedback-box">
+            <div class="feedback-title" id="feedbackTitle">💡 解析</div>
+            <p class="feedback-text" id="feedbackText"></p>
+          </div>
+
+          <div class="quiz-actions">
+            <button id="addToNotebookBtn" class="btn btn-secondary" style="display: none;">
+              📌 加入我的錯題本
+            </button>
+            <button id="nextQuestionBtn" class="btn btn-primary" style="display: none; margin-left: auto;">
+              下一題 ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- 測驗完成結果介面 -->
+        <div id="quizResultView" class="quiz-result-view">
+          <div class="result-score-circle">
+            <div class="result-score-num" id="resultScoreNum">0</div>
+            <div class="result-score-label">滿分 100 分</div>
+          </div>
+          <h4 class="result-message" id="resultMessage">測驗結算中...</h4>
+          <p id="resultAdvice" style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;"></p>
+          <div style="display: flex; gap: 1rem; justify-content: center;">
+            <button id="restartQuizBtn" class="btn btn-primary">🔄 再測驗一次</button>
+            <a href="#notebook" class="btn btn-secondary">📖 查看錯題本</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         功能 5：個人錯題筆記本
+         ========================================================================== -->
+    <section id="notebook" class="section">
+      <div class="section-header">
+        <span class="section-tag">Step 5 · 錯題不二過</span>
+        <h3 class="section-title">📝 我的個人錯題筆記本</h3>
+        <p class="section-subtitle">
+          在模擬測驗中答錯或主動收藏的題目會自動暫存於此。考前反覆複習錯題，是高中國文從 50 分衝到 80 分的最快秘密！
+        </p>
+      </div>
+
+      <div id="notebookContainer">
+        <!-- JS 動態顯示錯題或空狀態 -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         功能 6：4週逆襲翻盤讀書計畫
+         ========================================================================== -->
+    <section id="studyplan" class="section">
+      <div class="section-header">
+        <span class="section-tag">Step 6 · 落地執行</span>
+        <h3 class="section-title">📅 第二次段考·4週逆襲讀書計畫</h3>
+        <p class="section-subtitle">
+          為第一次段考失利的同學打造的步步為營提分計畫。每天投入 20~30 分鐘，打勾記錄進度，進度會自動儲存在你的瀏覽器中！
+        </p>
+      </div>
+
+      <!-- 進度總覽條 -->
+      <div class="plan-progress-header">
+        <div class="plan-progress-left">
+          <h4>🚀 逆襲進度推進儀表板</h4>
+          <p>完成所有檢核點，第二次段考輕鬆及格並邁向高標！</p>
+        </div>
+        <div class="plan-progress-percent" id="planPercent">0%</div>
+      </div>
+
+      <div class="weeks-grid" id="weeksGrid">
+        <!-- JS 動態渲染 4 週計畫卡片與 Checkbox -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 課文詳細彈窗 (Modal) -->
+  <div id="lessonModal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="brand-badge" id="modalNumber">第一課</span>
+          <h2 id="modalTitle" style="margin-top: 0.3rem;">課文標題</h2>
+        </div>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="關閉彈窗">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- JS 動態填入課文逐句對照與賞析 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="footer-quote">
+      「聞道有先後，術業有專攻，如是而已。」
+    </div>
+    <p class="footer-desc">
+      第一次段考只是一次小試煉，它告訴了你盲點所在，而不是你的終點。<br>
+      踏實掌握東大版高一國文核心字詞、融通文言意境，下一次段考你一定會讓人刮目相看！
+    </p>
+    <div class="footer-copy">
+      專為高一東大版國文學習者設計 · 108課綱段考逆襲專利 · 資料儲存於本機瀏覽器
+    </div>
+  </footer>
+
+  <!-- 載入資料庫與邏輯腳本 -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
